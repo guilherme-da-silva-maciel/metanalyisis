@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "review-project"
+version = "0.1.0"
+description = ""
+authors = ["Guilherme_maciel <aprendiz.guilherme@fontespromotora.com>"]
+readme = "README.md"
+packages = [{include = "review_project"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sqlalchemy = "^2.0.4"
+python-jose = "^3.3.0"
+pyrebase4 = "^4.6.0"
+pydantic = {extras = ["email"], version = "^1.10.6"}
+asyncpg = "^0.27.0"
+firebase-admin = "^6.1.0"
+uvicorn = "^0.21.1"
+fastapi = "^0.95.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
